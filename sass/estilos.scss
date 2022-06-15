@@ -1,0 +1,145 @@
+$color1:#0E88E6;
+$color2:black;
+$color3:white;
+
+$var1:100%;
+$var2:40%;
+$var3:30px;
+$var4:20px;
+$var5:50px;
+$var6:40px;
+
+
+$headings: (
+  h1:40px,
+  h2:40px,
+  h3:20px,
+  h4:50px,
+);
+
+@each $headinig, $size in $headings {
+  #{$heading}{
+    font-size: $size;
+  }
+} 
+
+
+
+
+$animal:600px;
+
+
+// mapa de colores
+$colores:(
+    white: #fff,
+    grisClaro: #bdbdbd,
+    gris:#7e7e7e,
+    grisOscuro: #666,
+    grisMuyOscuro:#303030,
+    black:#000,
+    beige:#e7d3b1,
+);
+
+
+
+
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+header{
+	background:$color3;
+  }
+
+
+
+
+
+li{
+  border: none;
+	cursor: pointer;
+	background: none;
+  position: relative ;
+	text-decoration: none;
+	font-family: 'Slabo 27px', serif;
+  box-shadow: 2px 4px 10px 0 rgba(255, 255, 255, 0);
+  overflow: hidden;
+  transition: 0.2;
+  color:$color3;
+}
+
+li:hover{
+	background: rgba(255, 255, 255, 0);
+	box-shadow: 0 0 10px , 0 0 40px rgba(255, 255, 255, 0.391) , 0 0 50px rgba(255, 255, 255, 0.391);
+	text-decoration: none;
+	color:$color2;
+}
+
+
+
+
+
+
+footer {
+    text-align: center;
+    /*
+    width:($var1) - ($var2);
+    */
+    width: $var1;
+    margin: auto;
+    padding: $var4;
+    color: $color2;
+    background-color: $color3;
+  }
+  
+  body {
+    background-image: url(/img/fondo.svg);
+    height: $var1;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+  
+  h1 {
+    text-align: center;
+    margin: auto;
+    padding: $var4;
+  }
+  
+  
+  nav {
+    font-size: $var4;
+  }
+  
+  div {
+    max-height: 45rem;
+  }
+
+  span{
+    color:$color1;
+  }
+
+
+  p{
+    font-size: $var4;
+  }
+
+.h3-titulo{
+  text-align: center;
+  padding: $var4;
+  margin: auto;
+  margin: $var5;
+}
+.parrafo{
+  padding: $var4;
+  margin: auto;
+  margin: $var5;
+}
+
+.campeones{
+  width: $var1;
+  
+}
+
